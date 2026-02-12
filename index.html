@@ -5,33 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 40px;
             background-color: #f4f6f9;
-        }
-        h1 {
             color: #111;
         }
-        p {
-            font-size: 18px;
-            color: #444;
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
         }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #111, #333);
+            color: white;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
         .btn {
             display: inline-block;
             margin-top: 20px;
             padding: 12px 25px;
-            background-color: black;
-            color: white;
+            background-color: #fff;
+            color: #000;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        footer {
+            background: #000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        @media (min-width: 768px) {
+            .flex {
+                display: flex;
+                justify-content: center;
+            }
+            .card {
+                width: 250px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Twifwealth</h1>
-    <p>Your Success, Our Mission</p>
+
+<header>
+    <h2>Twifwealth</h2>
+</header>
+
+<section class="hero">
+    <h1>Your Success, Our Mission</h1>
     <p>Professional Trading Strategies & Financial Growth Solutions</p>
-    <a href="#" class="btn">Contact Us</a>
+    <a href="#contact" class="btn">Get Started</a>
+</section>
+
+<section>
+    <h2>About Twifwealth</h2>
+    <p>Twifwealth is focused on structured trading strategies, disciplined execution, and sustainable financial growth. We combine analytical precision with strategic planning to deliver value-driven solutions.</p>
+</section>
+
+<section>
+    <h2>Our Services</h2>
+    <div class="flex">
+        <div class="card">
+            <h3>Strategy Development</h3>
+            <p>Custom trading strategies designed for crypto and Indian markets.</p>
+        </div>
+        <div class="card">
+            <h3>Signal Systems</h3>
+            <p>Structured signal generation based on disciplined frameworks.</p>
+        </div>
+        <div class="card">
+            <h3>Performance Analytics</h3>
+            <p>Transparent performance tracking and structured reporting.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Our Approach</h2>
+    <p>We follow a semi-manual trading methodology combining automated systems with strategic human oversight to maintain consistency and risk control.</p>
+</section>
+
+<section>
+    <h2>Why Choose Us</h2>
+    <p>✔ Disciplined Strategy Execution<br>
+       ✔ Risk-Managed Framework<br>
+       ✔ Transparent Structure<br>
+       ✔ Long-Term Focused Growth</p>
+</section>
+
+<section>
+    <h2>Risk Disclaimer</h2>
+    <p>Trading involves risk. Past performance does not guarantee future results. Users are advised to conduct independent research and risk assessment before participating in financial markets.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@twifwealth.com</p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+</section>
+
+<footer>
+    © 2026 Twifwealth. All Rights Reserved.
+</footer>
+
 </body>
 </html>
