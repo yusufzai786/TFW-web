@@ -1,151 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Twifwealth</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<title>Twifwealth</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #0f172a;
-    color: #f1f5f9;
+  font-family: 'Inter', sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  line-height: 1.6;
 }
 
 header {
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #0b1120;
+  background: #0f172a;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h2 {
-    margin: 0;
+  font-weight: 700;
 }
 
 nav a {
-    color: #f1f5f9;
-    margin-left: 20px;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
 }
 
 .hero {
-    padding: 100px 20px;
-    text-align: center;
+  background: linear-gradient(135deg,#0f172a,#1e293b);
+  color: white;
+  padding: 100px 8%;
+  text-align: center;
 }
 
 .hero h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+  font-size: 42px;
+  margin-bottom: 15px;
 }
 
 .hero p {
-    opacity: 0.8;
+  font-size: 18px;
+  opacity: 0.8;
 }
 
 .btn {
-    margin-to
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background-color: #fff;
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: #22c55e;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+}
 
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
+.section {
+  padding: 80px 8%;
+  text-align: center;
+}
 
-        footer {
-            background: #000;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 14px;
-        }
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
 
-        @media (min-width: 768px) {
-            .flex {
-                display: flex;
-                justify-content: center;
-            }
-            .card {
-                width: 250px;
-            }
-        }
-    </style>
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.cta {
+  background: #0f172a;
+  color: white;
+  padding: 80px 8%;
+  text-align: center;
+}
+
+footer {
+  background: #020617;
+  color: #94a3b8;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
-    <h2>Twifwealth</h2>
+  <h2>Twifwealth</h2>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#strategy">Strategy</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
-    <h1>Your Success, Our Mission</h1>
-    <p>Professional Trading Strategies & Financial Growth Solutions</p>
-    <a href="#contact" class="btn">Get Started</a>
+  <h1>Strategic Trading. Structured Growth.</h1>
+  <p>Your Success, Our Mission</p>
+  <a href="#contact" class="btn">Get Started</a>
 </section>
 
-<section>
-    <h2>About Twifwealth</h2>
-    <p>Twifwealth is focused on structured trading strategies, disciplined execution, and sustainable financial growth. We combine analytical precision with strategic planning to deliver value-driven solutions.</p>
-</section>
-
-<section>
-    <h2>Our Services</h2>
-    <div class="flex">
-        <div class="card">
-            <h3>Strategy Development</h3>
-            <p>Custom trading strategies designed for crypto and Indian markets.</p>
-        </div>
-        <div class="card">
-            <h3>Signal Systems</h3>
-            <p>Structured signal generation based on disciplined frameworks.</p>
-        </div>
-        <div class="card">
-            <h3>Performance Analytics</h3>
-            <p>Transparent performance tracking and structured reporting.</p>
-        </div>
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Strategy Development</h3>
+      <p>Structured trading systems designed for disciplined execution in crypto and Indian markets.</p>
     </div>
+    <div class="card">
+      <h3>Signal Framework</h3>
+      <p>Hybrid semi-manual trading model combining automation with strategic oversight.</p>
+    </div>
+    <div class="card">
+      <h3>Performance Transparency</h3>
+      <p>Clear reporting and analytical evaluation for sustainable growth.</p>
+    </div>
+  </div>
 </section>
 
-<section>
-    <h2>Our Approach</h2>
-    <p>We follow a semi-manual trading methodology combining automated systems with strategic human oversight to maintain consistency and risk control.</p>
+<section id="strategy" class="section">
+  <h2>Our Trading Approach</h2>
+  <p>Twifwealth operates under a disciplined semi-manual methodology where automation enhances efficiency while strategic decision-making ensures risk control and long-term performance stability.</p>
 </section>
 
-<section>
-    <h2>Why Choose Us</h2>
-    <p>✔ Disciplined Strategy Execution<br>
-       ✔ Risk-Managed Framework<br>
-       ✔ Transparent Structure<br>
-       ✔ Long-Term Focused Growth</p>
+<section class="cta">
+  <h2>Ready to Grow Strategically?</h2>
+  <p>Join Twifwealth and experience structured financial growth.</p>
+  <a href="#contact" class="btn">Get Service</a>
 </section>
 
-<section>
-    <h2>Risk Disclaimer</h2>
-    <p>Trading involves risk. Past performance does not guarantee future results. Users are advised to conduct independent research and risk assessment before participating in financial markets.</p>
-</section>
-
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: support@twifwealth.com</p>
-    <p>Phone: +91-XXXXXXXXXX</p>
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>Email: support@twifwealth.com</p>
+  <p>Location: India</p>
 </section>
 
 <footer>
-    © 2026 Twifwealth. All Rights Reserved.
+  © 2026 Twifwealth. All Rights Reserved.
 </footer>
 
 </body>
